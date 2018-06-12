@@ -1,0 +1,23 @@
+{
+  "client_id": "foo",
+  "client_secret": "foo",
+  "scope": [
+    "uaa.none foo.bar"
+  ],
+  "resource_ids": [
+    "none"
+  ],
+  "authorities": [
+    "uaa.admin",
+    "clients.read",
+    "clients.write",
+    "clients.secret",
+    "scim.read",
+    "scim.write",
+    "clients.admin"
+  ],
+  "authorized_grant_types": [
+    "client_credentials",
+    "urn:ietf:params:oauth:grant-type:jwt-bearer"
+  ]
+}

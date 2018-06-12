@@ -13,6 +13,7 @@
 package org.cloudfoundry.identity.uaa.oauth;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.google.common.collect.ImmutableMap;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.cloudfoundry.identity.uaa.approval.Approval;
@@ -159,7 +160,12 @@ public class UaaTokenServices implements AuthorizationServerTokenServices, Resou
 
     private boolean restrictRefreshGrant;
 
-    private UaaTokenEnhancer uaaTokenEnhancer = null;
+    private UaaTokenEnhancer uaaTokenEnhancer =  new UaaTokenEnhancer() {
+        @Override
+        public Map<String, String> getExternalAttributes (OAuth2Authentication authentication) {
+            return ImmutableMap.of("foo", "bar" , "scopes","here");
+        }
+    };
     private IdTokenCreator idTokenCreator;
     private TokenValidityResolver accessTokenValidityResolver;
     private TokenValidityResolver refreshTokenValidityResolver;
@@ -181,7 +187,8 @@ public class UaaTokenServices implements AuthorizationServerTokenServices, Resou
     }
 
     public void setUaaTokenEnhancer(UaaTokenEnhancer uaaTokenEnhancer) {
-        this.uaaTokenEnhancer = uaaTokenEnhancer;
+        //FIXME
+        //this.uaaTokenEnhancer = uaaTokenEnhancer;
     }
 
     @Override

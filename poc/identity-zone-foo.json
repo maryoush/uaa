@@ -1,0 +1,113 @@
+{
+  "id" : "foo",
+  "subdomain" : "foo",
+  "config" : {
+    "clientSecretPolicy" : {
+      "minLength" : -1,
+      "maxLength" : -1,
+      "requireUpperCaseCharacter" : -1,
+      "requireLowerCaseCharacter" : -1,
+      "requireDigit" : -1,
+      "requireSpecialCharacter" : -1
+    },
+    "tokenPolicy" : {
+      "accessTokenValidity" : 3600,
+      "refreshTokenValidity" : 7200,
+      "jwtRevocable" : false,
+      "refreshTokenUnique" : false,
+      "refreshTokenFormat" : "jwt",
+      "activeKeyId" : "barkey",
+      "keys" : {
+        "fookey" : {
+          "signingKey" : "-----BEGIN RSA PRIVATE KEY-----MIIEpAIBAAKCAQEAzYulh8T9m85gPneRdRo0g8o/U0mqrzdztAt/PKcyxo+LtRLwdXdCqhNq3jDZzp036bX12cPbGxL5/bvSciDxA5gMECyNW+ljCpka9fgO1lkwRvb0OFxyOkzRQoEFiPmaynfqiJpl19bSP/bwKEX/xe32Vzwe109QNbMNr0lynOk/UHm8smhUyD7hehHfQN+zRhoqtLgn/FSU9UHdeJ/6HxwpaL4K8XMolczBDRimvf1O3yYLZDmv4JCwT6YhKQm+UluLz3qSG3DfhoFa5G2BOcKK0zHr+/03M3KKFP0wNvuc9o7f9mtfj8/ovNaECaLrpHSmunAhHvqErY/g04bSXwIDAQABAoIBAQCyRm65xWfZnTPoujgVAzeNHvuxt3EtK8FU5avj5Xiqs5IO6XBZ0aimbtUABgrDo6T9Ne8Yg0EkyF6/bgpnJp8j6Np9pMauc0yNwqGZuR7VVuICiurjf3sribjuH423chaJiVyIQrIWdKJDDGDb7WqcN3qzytdNE+OTz8sMv32DDVT90LQ7EUgCnVSVYoiAuWQaljIzeMdxUTyEAqzwr7lE8NQ6tLirG/7859G3qEegt4j9FKj/+bTr6e9E+278APBRuWBr5oBHvnQgUD87E0rL3SqX0Pxph3mEwDhSsgev2OwVpCsFtsPnmS0daCnGVvIhdNG8apIaAxqkVgbkqZ3BAoGBAOk+4mXTpcVYmny72+FDLyhb4iJTXmfBzBsQn1mvYCQNEnVWos9czeZEH2ZPbA05qphHNGYLboVUBJnzjjecasIY2SRTwOm4iFqXWc2UppcLn1Cy4toJPxSQU1iFFYGU0Tles5MSuFqgRuccuAydRMlwfTVMQJHeZZ1s1OQTD67RAoGBAOGY+WA9KPX6Il/+LTXeDAlMVdydXNYZJgaXq4blhUrruEn+DTO1e85z1rRphJLrQTRDKJvb8pHUcMxsNFufMddBVEbMchMvsFKR+uLgTsrWk5xSGpLla9a4u1m43DR5rvg430mjZ7724V/+Xe++AfxMRfkz6Ad/rqcRh0wTvJovAoGAKiulcTWf7htD6zNn4MVt3EUokH40Plwqk+YgeW2c20fFw5NDYmxsCardZnkLlySK9HdDQQPmGpMDNfZ0CxfrsWYetFO0OE2V0ZM1uFac/Ags6ME/BJ7RWd1yRDnjlocagN3fZ8Lls/TwfM6TdCxnCGifKqi7r+PeyWSo5QeROVECgYAQbvpLfmkLcgsq/vMAJ4qs6ried4AZwH86n7XI/9Mz3/Puv+jqSWAZa+rJ/Z3Arg5z5iiBIgaLhPQqj/9IZVJWIdYnyiDNMP4hJa0m9bwHnpXmHzz8UmYGoDJVmNfBotOSFWJ+lL6r9IP6YCcrnaW7YTr/qj5OvYhVdztp2U411QKBgQCHqvhU3PxleJhkzGaHQct4nAFdzfEh4eT+N7mu5HghdzrPc0LjC7+Ext5k3qzGCtV4v47FzvEJHgpTrDtYTad3xyCrq5KuID4TPw2adKl2VKNvD9WZR/BHncIyMu1Kg84W/7HqFfc6xMKu4oHUnk6wnPD9y2vZG1Aaq51xMnLjLA==-----END RSA PRIVATE KEY-----"
+        },
+        "barkey" : {
+          "signingKey" : "-----BEGIN RSA PRIVATE KEY-----MIIEowIBAAKCAQEAz20sWf5LrjFUEdr8CBo/3nUyWrO4kIbNF3mGHEGvigGvrV3IHqHlGVPxrWZsEwMXQE+M2i3iAownTJHDU9cpQMDvr1hEzH0rLUMyvdsXe9rJJkRj3lp4n+H1DMnpOqsmkxSj7c51L9/EDeBfR+kukGn8qTwa4SHB4XDDs3876VF4TtAIVq39sqBiXSEdbOt3ME3AUp2ZeC5GMFh8NUGzNz9f0/wRzDAhwq8iZClG6gSLo3VXogwKvscR8YEBXN2iCQa/ue0iBH0qrRBO9H8mKYZrVdwCGmPJpnZnDKHp+FJ3WNydzGiKgU4TDO/+H8QvMzpC5QMbG1MIOVNR8oYVXQIDAQABAoIBAQDJmYIRtWY41xiugfeSqHCK9b0LCsHHNjz/I82EiRLjPuBPz2ZA33ibNUsfDPzdPZPLnYV4SD/x2eYYNVNymRwvI1XRRikX1k+wni8i913LssjtuGqYIbY7LpHM7DESJGZJbTYmWxLqhME3+2qfqbLoCRrYIOK/DOAzDDYorvC7wgLnDdWT+kYjcYZ+GtVsjJBCq7KLT2jXl7GL9urjjvPdP5wf4nnciaeBSXedvrCsgl5e9wb/6HtujB7iq4jHDJhWO5vtdLtFq/906NL+/b9tpj4Qgzg7D+Gqek/TENLSD/qYibwspI3NZTs1Io3j2w7AFpRV1kgPwKXaVabG30YBAoGBAOxvalT1FdT19SNMLjZZP0LrgabdqmBtNjz1ynjIvDlQVDiLd1Z33fuqYWS3/yplG3QAbpzW8I//LaHn5qaCw6eyuCdRJq9fCF9MoafZWGZXm8iCP+oy9K+GziLK2MBlBNFy5iGXDH7Spi0H/Rsayogo8myfTErXNMw/4DgAUEt5AoGBAOCXPlv7m0T569VZeuT9SVCx4CRL2d6qYURweRYotDJH8QgpVgG/cIyNySvtaMBTD8KvGBFzAs4PX0BkXEEOGl2985guD8kH8WXVsS1YLJuBgw6jwuYTAB+9rATtOLVtm+vUEYnxtRETeX/sx2d2gK74IAOfP7pxObwG190QFnwFAoGAWgSxf1cw0Lw0cRP4JEkmhNwVqOqMi9oI5HzQcdw7jba/2id/cDSDF+Zu3mIPjJyiLzBa7OwI+0o0nYglkRAIXjj1VELZb7vG/EG46qcduRlx/o1YuFpePtYcdbK1g8ryYqxUYkWYRFD/Y/W+sCsrIVw1sJWV/oihWYKYY7n62EECgYAyilaCJJDAaO1lSYmaVlVVT3H9OQSCUx0oZZcaIXbLidz31TWBly8gshd/RyG3hfmZ+gUUiCktbdAlkXAhQ6czSTe0G0l6F8t++yOv7JO9OtvfQ4Lse4IfonM/eJK2YUAhRcvcmwQAH73Lx+Dnq4cx2Kx7pC6XKjuv0GprWN92cQKBgCRbzlL/j5lvP+cnDySlYIB1S5FlwhBYdo+Rr3Kz8Not3zlxBNXiltZbITlat13dBsa4+MrTmdfSgvRXzz88laAlCDNRdFsDJG77pNdD4eyTNIU7uO+nDJ7zVP+TGlJ+T+22TUQt1gJ6QYRETYdz9YFg+JQ7WzIHMAqW/IkLTcWh-----END RSA PRIVATE KEY-----"
+        }
+      }
+    },
+    "corsPolicy" : {
+      "xhrConfiguration" : {
+        "allowedOrigins" : [ ".*" ],
+        "allowedOriginPatterns" : [ ],
+        "allowedUris" : [ ".*" ],
+        "allowedUriPatterns" : [ ],
+        "allowedHeaders" : [ "Accept", "Authorization", "Content-Type" ],
+        "allowedMethods" : [ "GET" ],
+        "allowedCredentials" : false,
+        "maxAge" : 1728000
+      },
+      "defaultConfiguration" : {
+        "allowedOrigins" : [ ".*" ],
+        "allowedOriginPatterns" : [ ],
+        "allowedUris" : [ ".*" ],
+        "allowedUriPatterns" : [ ],
+        "allowedHeaders" : [ "Accept", "Authorization", "Content-Type" ],
+        "allowedMethods" : [ "GET" ],
+        "allowedCredentials" : false,
+        "maxAge" : 1728000
+      }
+    },
+    "links" : {
+      "logout" : {
+        "redirectUrl" : "/login",
+        "redirectParameterName" : "redirect",
+        "disableRedirectParameter" : false,
+        "whitelist" : null
+      },
+      "homeRedirect" : "http://my.hosted.homepage.com/",
+      "selfService" : {
+        "selfServiceLinksEnabled" : true,
+        "signup" : null,
+        "passwd" : null
+      }
+    },
+    "prompts" : [ {
+      "name" : "username",
+      "type" : "text",
+      "text" : "Email"
+    }, {
+      "name" : "password",
+      "type" : "password",
+      "text" : "Password"
+    }, {
+      "name" : "passcode",
+      "type" : "password",
+      "text" : "Temporary Authentication Code (Get on at /passcode)"
+    } ],
+    "idpDiscoveryEnabled" : false,
+    "branding" : {
+      "companyName" : "Test Company",
+      "productLogo" : "VGVzdFByb2R1Y3RMb2dv",
+      "squareLogo" : "VGVzdFNxdWFyZUxvZ28=",
+      "footerLegalText" : "Test footer legal text",
+      "footerLinks" : {
+        "Support" : "http://support.example.com"
+      },
+      "banner" : {
+        "logo" : "VGVzdFByb2R1Y3RMb2dv",
+        "text" : "Announcement",
+        "textColor" : "#000000",
+        "backgroundColor" : "#89cff0",
+        "link" : "http://announce.example.com"
+      },
+      "consent" : {
+        "text" : "Some Policy",
+        "link" : "http://policy.example.com"
+      }
+    },
+    "accountChooserEnabled" : false,
+    "userConfig" : {
+      "defaultGroups" : [ "openid", "password.write", "uaa.user", "approvals.me", "profile", "roles", "user_attributes", "uaa.offline_token" ]
+    },
+    "mfaConfig" : {
+      "enabled" : false
+    },
+    "issuer" : "http://foo.localhost:8080/uaa"
+  },
+  "name" : "The Foo Zone",
+  "version" : 0,
+  "description" : "Like the Foo Zone but tastier.",
+  "created" : 1527032708003,
+  "last_modified" : 1527032708003
+}
